@@ -11,7 +11,7 @@ func RootCommand() *cobra.Command {
 		Long:  "This application greets the user with a friendly message.",	
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Println("Welcome to the greeter application!")
-		},
+		},                                                    
 	}
 
      cmd.AddCommand(greet.GreetCommand())
